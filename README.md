@@ -53,7 +53,7 @@ de entrada do serviço `"/PaymentService/pay"`, o mesmo vale para os campos cont
 
 ## Como executar este exemplo
 
-- Importe a pasta do projeto na sua IDE de preferência, no exemplo uso o Intellij Community:
+- Importe a pasta do projeto na sua IDE de preferência, no exemplo uso o Intellij Community;
 - Feita a importação, execute a task `generateProto` do Gradle;
 - No diretório raiz do repositório execute `docker-compose -f ./docker-compose-grpc-wiremock.yaml up --build` para que uma instância do gRPC Wiremock seja
 inicializada;
