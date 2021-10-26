@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/PaymentService/pay",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "name": "any name",
+          "cardNumber": "CARD-NUMBER-HERE",
+          "value": 100.00
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": "PAYMENT_ACCEPT"
+    }
+  }
+}

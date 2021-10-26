@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package br.com.tony.shoppingcartservice;
+
+service ShoppingCartService {
+  rpc CreateOrder (ShoppingCartServiceRequest) returns (ShoppingCartServiceReply) {}
+}
+
+message ShoppingCartServiceRequest {
+  string name = 1;
+  double value = 2;
+  string cardNumber = 3;
+}
+
+message ShoppingCartServiceReply {
+  PaymentStatus orderStatus = 1;
+}
+
+enum PaymentStatus {
+  PAYMENT_ACCEPT = 0;
+  PAYMENT_REFUSED= 1;
+}

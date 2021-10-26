@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  grpc-wiremock:
+    container_name: grpc-wiremock
+    image: adven27/grpc-wiremock
+    ports:
+      - 8888:50000
+    volumes:
+      - ./wiremock/protos:/proto
+      - ./wiremock/stubs:/wiremock

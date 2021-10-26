@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/PaymentService/pay",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "name": "invalid name",
+          "cardNumber": "INVALID-CARD-NUMBER-HERE",
+          "value": 50.00
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "status": "PAYMENT_REFUSED"
+    }
+  }
+}

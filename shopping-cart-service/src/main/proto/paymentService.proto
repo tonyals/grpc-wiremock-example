@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package br.com.tony.paymentservice;
+
+service PaymentService {
+  rpc pay (PaymentGrpcRequest) returns (PaymentGrpcReply) {}
+}
+
+message PaymentGrpcRequest {
+  string name = 1;
+  string cardNumber = 2;
+  double value = 3;
+}
+
+message PaymentGrpcReply {
+  PaymentStatus status = 1;
+}
+
+enum PaymentStatus {
+  PAYMENT_ACCEPT = 0;
+  PAYMENT_REFUSED= 1;
+}

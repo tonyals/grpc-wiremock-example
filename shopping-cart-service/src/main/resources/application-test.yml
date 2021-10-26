@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: shoppingCartService
+
+grpc:
+  server:
+    port: 50051
+  channels:
+    shoppingcartservice:
+      target: localhost:50051
+      plaintext: true
+
+    paymentservice:
+      target: localhost:8888
+      plaintext: true
