@@ -51,7 +51,7 @@ O JSON acima significa que toda vez que uma requisição for feita no endereço 
 o bloco **response** definido será retornado. Os campos **name**, **cardNumber** e **value** devem ter os mesmos nomes e tipos de dados definidos no parâmetro 
 de entrada do serviço `"/PaymentService/pay"`, o mesmo vale para os campos contidos na resposta.
 
-## Como executar
+## Como executar este exemplo
 
 - Importe a pasta do projeto na sua IDE de preferência, no exemplo uso o Intellij Community:
 - Feita a importação, execute a task `generateProto` do Gradle;
