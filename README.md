@@ -2,6 +2,8 @@
 
 Este repositório possui um exemplo prático de como configurar e realizar testes integrados com respostas mockadas utilizando o [gRPC Wiremock](https://github.com/Adven27/grpc-wiremock)
 
+Consulte também o artigo [Utilizando gRPC Wiremock para mockar respostas gRPC em testes integrados](https://tonyaugusto.medium.com/utilizando-grpc-wiremock-para-mockar-respostas-grpc-em-testes-integrados-289566a7bd98) para detalhes adicionais.
+
 ## Stack
 - Micronaut gRPC;
 - Kotlin;
